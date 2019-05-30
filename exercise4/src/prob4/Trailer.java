@@ -4,8 +4,8 @@ public class Trailer extends Property
 {
     private Double trailerFlatRentCharge = 500.0;       //$500 flat cost 
     
-    public Trailer(Address address) {
-        super(address);
+    public Trailer(Address parkAddress) {
+        super(parkAddress);
     }
 
     @Override
