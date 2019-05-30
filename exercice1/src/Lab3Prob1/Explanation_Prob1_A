@@ -1,0 +1,11 @@
+
+p1.equals(p2) scenario : The execution of the instruction p1.equals(p2) return false because when it is executed 
+                     the "equals" method in the class "PersonWithJob" is invoked and as p2 is not an 
+                     instance of PersonWithJob then the method return false.
+
+
+p2.equals(p1) scenario :  The execution of p2.equals(p1) return true because when it is executed, 
+                     the method "equals" in the class Person is invoked. In Person.equals, this line 
+                    "if(!(aPerson instanceof Person)) return false;" compares p1 with p2 and 
+                      since p1 is also a Person by virtue of inheritance, that line is not triggered and 
+                      also p1.name is equal to p2.name here.
