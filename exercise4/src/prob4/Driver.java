@@ -11,7 +11,7 @@ public class Driver {
 	    
 		Property[] properties = { new House(houseAddress, 9000), new Condo(condoAddress, 2), new Trailer(trailerAddress) };
 		double totalRent = Admin.computeTotalRent(properties);
-		System.out.println(totalRent);
+		System.out.println("Total rent for all property is: " + totalRent);
 		System.out.print("Properties with city 1 : " + Admin.getCityProperties(properties, city1));
 	}
 }
